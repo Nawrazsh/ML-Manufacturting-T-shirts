@@ -4,7 +4,7 @@ import k_mean as km
 import plot as pl
 import time as t
 n=100000
-k=5
+k=input()
 data=pd.read_csv('group5.csv',names=["column 1","column 2","column 3","column 4","column 5","column 6","pca 1","pca 2","column 7"])
 start=t.time()
 reduced_data=PCA(n_components=2,data=data)
